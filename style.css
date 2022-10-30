@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 1px solid red;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    border: 1px solid blue;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    height: 2.5rem;
+    width: 400px;
+    outline: none;
+    border: 1px solid ;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.contenu {
+    border: 1px solid rgb(26, 255, 0);
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-gap: 35px;
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 100%;
+}
+
+ .card {
+     position: relative;
+     width: 300px;
+     height: 200px;
+     margin: 0 auto;
+     border-radius: 15px;
+     box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+     color: bisque;
+ }
+
+ .card .face {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .face.face1 {
+     box-sizing: border-box;
+     padding: 20px;
+     cursor: pointer;
+ }
+
+ 
+
+  .face.face1  img {
+    width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+  }
+
+ .card .face.face1 h2 {
+     margin: 0;
+     padding: 0;
+ }
+
+ .card .face.face1 .specia {
+     background-color: black;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     text-align: center;
+     padding-bottom: 20px;
+ }
+
+ .card .face.face2 {
+     transition: 0.5s;
+ }
+
+ .card .face.face2 img {
+     width: 100%;
+     height: 100%;
+     border-radius: 15px;
+     background-size: cover;
+ }
+
+ .card .face.face2 h2 {
+     margin: 0;
+     padding: 0;
+     font-size: 10em;
+     color: #fff;
+     transition: 0.5s;
+     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+     z-index: 10;
+ }
+
+ .card:hover .face.face2 {
+     height: 0px;
+ }
